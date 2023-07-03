@@ -10,7 +10,7 @@ import sockets from './sockets'
 config()
 // ServerConnection()
 const url = process.env.URL_WEB
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 const app = express()
 const server = http.createServer(app)
 const io = new SocketServer(server, {

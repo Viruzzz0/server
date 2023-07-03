@@ -14,7 +14,7 @@ const sockets_1 = __importDefault(require("./sockets"));
 (0, dotenv_1.config)();
 // ServerConnection()
 const url = process.env.URL_WEB;
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const app = (0, express_1.default)();
 const server = http_1.default.createServer(app);
 const io = new socket_io_1.Server(server, {
