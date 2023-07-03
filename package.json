@@ -2,6 +2,9 @@
   "name": "socket-chat-server",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "18.x"
+  },
   "type": "commonjs",
   "scripts": {
     "dev": "nodemon ./src/index.ts",
